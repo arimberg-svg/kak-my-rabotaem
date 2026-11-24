@@ -138,7 +138,7 @@
 - [Honda Hands](https://www.youtube.com/watch?v=5wEjV2ekSwE). Две минуты одних рук. Речи нет.
 - [Honda Cog](https://www.youtube.com/watch?v=_ve4M4UsJQo). Звучит то, что происходит в кадре.
 - [Hornbach. Каждый квадратный метр](https://www.youtube.com/watch?v=o_8-EtnWIjg). Гран-при Канн 2024, сеть DIY. Текст один, в конце.
-- [Brico Dépôt. Engagés](https://www.strategies.fr/creations/campagne/upgrade-et-rosamund-pour-brico-depot-engages). Документальный фильм про сотрудников DIY: 25 дней, шесть человек, обычные задачи.
+- [Brico Dépôt. Engagés](https://www.youtube.com/watch?v=i8loDRSRR-s). Документальный фильм про сотрудников DIY: 25 дней, шесть человек, обычные задачи. На YouTube открывается серия про зал, Вилли и Кевин.
 
 Рядом по приёму стоят короткие наблюдательные фильмы с Vimeo: магазин снимают, пока он живой. Пустой зал после закрытия выглядит как декорация.
 
