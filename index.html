@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Как снять, как мы работаем — У Михалыча</title>
-  <meta name="description" content="Идеи ролика про сотрудников: офис и магазин DIY, без слов, с коротким текстом сверху." />
+  <title>Покадровка процесса с лицами. У Михалыча</title>
+  <meta name="description" content="Покадровка рабочего процесса: в каждом кадре лицо человека, который делает этот шаг. Офис и магазин DIY." />
   <link rel="icon" href="assets/logo.png" />
   <style>
     :root {
@@ -75,7 +75,7 @@
     h1 {
       margin: 0 0 20px;
       font-size: clamp(40px, 6vw, 68px);
-      max-width: 16ch;
+      max-width: 12em;
     }
     .hero p.lead {
       margin: 0;
@@ -113,8 +113,9 @@
     }
     .intro {
       margin: 0 0 28px;
-      max-width: 42em;
+      max-width: 46em;
     }
+    .follow { margin-top: 28px; }
     .principles {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -263,6 +264,56 @@
     }
     footer .motto { margin: 0 0 10px; font-size: 32px; }
     footer p { margin: 0; color: var(--gray); }
+    .strip-wrap {
+      overflow-x: auto;
+      padding-bottom: 6px;
+    }
+    .strip {
+      display: flex;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: max-content;
+    }
+    .panel {
+      width: 240px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .shot {
+      min-height: 168px;
+      margin: 0;
+      padding: 16px 16px 14px;
+      background: var(--soft);
+    }
+    .shot .n {
+      display: block;
+      font-family: var(--head);
+      color: var(--violet);
+      font-size: 22px;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .shot span.place {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .shot p { margin: 0; }
+    .line {
+      margin: 0;
+      background: var(--black);
+      color: var(--white);
+      padding: 10px 12px 11px;
+      font-size: 15px;
+      line-height: 1.35;
+      margin-top: auto;
+    }
     @media (max-width: 800px) {
       header.top .wrap, .principles, .watch-grid, .notes, .step {
         display: grid;
@@ -287,308 +338,263 @@
   <section class="hero">
     <div class="wrap">
       <p class="eyebrow">Офис и магазин DIY</p>
-      <h1>Как снять, как мы работаем</h1>
-      <p class="lead">Камера смотрит, как человек делает дело. Голоса нет. Короткая строка сверху называет то, что только что произошло.</p>
+      <h1>Покадровка процесса, с лицами</h1>
+      <p class="lead">В каждом кадре один шаг работы и лицо человека, который этот шаг делает. Рамка у всех кадров одна: номер, живая сцена, чёрная строка снизу.</p>
       <p class="motto">Делаем мир крепче</p>
       <nav class="jump" aria-label="Разделы">
-        <a href="#pravilo">Правило кадра</a>
-        <a href="#idei">Семь идей</a>
-        <a href="#sborka">Один ролик</a>
-        <a href="#smotret">Что посмотреть</a>
-        <a href="#smena">Как снимать смену</a>
+        <a href="#pravilo">Как выглядит кадр</a>
+        <a href="#zayavka">Заявка</a>
+        <a href="#zal">Покупатель в зале</a>
+        <a href="#utro">Утро смены</a>
+        <a href="#formaty">Форматы листа</a>
       </nav>
     </div>
   </section>
 
   <section id="pravilo">
     <div class="wrap">
-      <h2>Правило кадра</h2>
-      <p class="intro">Текст на экране пишется в настоящем времени. Одна строка, около двух секунд. Шрифт Arial, белым по живому кадру. Фиолетовый остаётся на финальной карточке с девизом. Зал, пол и коробки выглядят как есть.</p>
+      <h2>Как выглядит кадр</h2>
+      <p class="intro">Лист читается как раскадровка: панели одного размера, в каждой лицо участника и одна строка. Строка начинается с имени, если человек согласен быть в кадре: «Имя. Принимает заявку.» Речи в ролике нет. Звук магазина и офиса остаётся, музыка только на финальной карточке «Делаем мир крепче».</p>
       <div class="principles">
         <article class="principle">
-          <strong>Камера рядом</strong>
-          <p>Снимайте, пока магазин открыт. Человек делает свою работу и не смотрит в объектив.</p>
+          <strong>Лицо в кадре</strong>
+          <p>Глаза и лицо занимают заметную часть панели. Человек делает свой шаг: смотрит в заявку, на полку, на коллегу или на покупателя.</p>
         </article>
         <article class="principle">
-          <strong>Одна строка</strong>
-          <p>Строка называет действие. «Дошли вместе.» Этой фразы достаточно, чтобы было понятно, что происходит.</p>
+          <strong>Один шаг</strong>
+          <p>Одна панель, один человек, одно действие. По листу видно, кто после кого ведёт процесс.</p>
         </article>
         <article class="principle">
-          <strong>Звук работы</strong>
-          <p>Писк сканера, колёса тележки, бумага, дверь. Музыка входит только на последней карточке.</p>
+          <strong>Одна рамка</strong>
+          <p>Одинаковое расстояние до лица, номер панели сверху, чёрная строка снизу. Так офис и зал выглядят одним фильмом.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="soft" id="idei">
+  <section class="soft" id="zayavka">
     <div class="wrap">
-      <h2>Семь идей</h2>
-      <p class="intro">Их можно снять за одну обычную смену. Если день один, склейте четвёртую, первую и шестую. Получится ролик примерно на минуту двадцать.</p>
-      <div class="ideas">
-
-        <article class="idea" id="poziciya">
-          <div class="idea-head">
-            <div class="num">01</div>
-            <div>
-              <p class="kicker">Главный ролик. Приём из Honda Cog: одно звено передаёт дело следующему.</p>
-              <h2>Одна позиция проходит день</h2>
+      <h2>Заявка от офиса до кассы</h2>
+      <p class="intro">Одна реальная заявка. Шесть человек, шесть лиц, в конце те же лица в порядке шагов. Лист можно показать до съёмки и на нём же собрать готовый ролик.</p>
+      <div class="strip-wrap">
+        <ol class="strip">
+          <li class="panel">
+            <div class="shot">
+              <span class="n">01</span>
+              <span class="place">Офис</span>
+              <p>Менеджер над заявкой. Лицо в три четверти, экран рядом.</p>
             </div>
-          </div>
-          <p class="meta"><span class="chip">около минуты</span><span class="chip">офис, склад, зал</span></p>
-          <p class="body">Этот ролик склеивает офис и магазин. Снимаете одну реальную позицию. В офисе её вносят в заказ. На складе её находят. В зале её ставят на полку или отдают в руки. Камера каждый раз узнаёт её по коробке, артикулу и цвету.</p>
-          <p class="block-title">Текст на экране</p>
-          <ul class="lines">
-            <li>9:12. Заявка в офисе.</li>
-            <li>Та же позиция. Склад.</li>
-            <li>Та же позиция. Зал.</li>
-            <li>Покупатель уходит с тем, за чем пришёл.</li>
-          </ul>
-          <p class="body after">В конце две секунды тишины и карточка «Делаем мир крепче».</p>
-        </article>
-
-        <article class="idea" id="ruki">
-          <div class="idea-head">
-            <div class="num">02</div>
-            <div>
-              <p class="kicker">Приём из Honda Hands. В кадре только руки и звук.</p>
-              <h2>Только руки</h2>
+            <p class="line">Имя. Принимает заявку.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">02</span>
+              <span class="place">Офис</span>
+              <p>Второй человек поднимает глаза от списка остатков.</p>
             </div>
-          </div>
-          <p class="meta"><span class="chip">40 секунд</span><span class="chip">хорошо для сторис</span></p>
-          <p class="body">Касса и сканер. Рулетка на трубе или кабеле. Подпись на накладной. Стикер на коробке. Мышь и клавиатура в офисе. Ключ от двери зала. На каждый жест одно слово.</p>
-          <p class="block-title">Текст на экране</p>
-          <ul class="lines">
-            <li>Посчитали.</li>
-            <li>Отмерили.</li>
-            <li>Подписали.</li>
-            <li>Положили так, чтобы следующий нашёл.</li>
-          </ul>
-        </article>
-
-        <article class="idea" id="metr">
-          <div class="idea-head">
-            <div class="num">03</div>
-            <div>
-              <p class="kicker">Приём Hornbach: весь фильм про одну маленькую меру. Декорации не нужны.</p>
-              <h2>Один метр зала</h2>
+            <p class="line">Имя. Проверяет наличие.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">03</span>
+              <span class="place">Склад</span>
+              <p>Кладовщик держит этикетку так, что лицо и номер видны вместе.</p>
             </div>
-          </div>
-          <p class="meta"><span class="chip">один штатив</span><span class="chip">целый день</span></p>
-          <p class="body">Берёте один настоящий метр прохода и снимаете его весь день с одной точки. Утром на нём пыль и ровная полка. Днём коробку снимают. Кто-то останавливается и смотрит ценник. К вечеру пустое место снова занято. Текст появляется редко.</p>
-          <p class="block-title">Текст на экране</p>
-          <ul class="lines">
-            <li>Один метр.</li>
-            <li>Утро.</li>
-            <li>Разобрали.</li>
-            <li>Вернули на место.</li>
-            <li>Один метр зала. Целый день.</li>
-          </ul>
-          <div class="meter" aria-hidden="true"><span>Один метр.</span></div>
-        </article>
-
-        <article class="idea" id="otkrytie">
-          <div class="idea-head">
-            <div class="num">04</div>
-            <div>
-              <p class="kicker">Час до покупателей. Зал ещё пустой, работа уже идёт.</p>
-              <h2>До открытия</h2>
+            <p class="line">Имя. Находит позицию.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">04</span>
+              <span class="place">Зал</span>
+              <p>Продавец ставит коробку на полку и смотрит на место.</p>
             </div>
-          </div>
-          <p class="meta"><span class="chip">утро</span><span class="chip">хорошее начало ролика</span></p>
-          <p class="body">Ряд ламп загорается. Ценник поправляют. Упавший угол коробки ставят ровно. Замок открывают. Камера стоит в глубине прохода, люди спиной или сбоку. Первые ноги покупателя в кадре и есть финал этого куска.</p>
-          <p class="block-title">Текст на экране</p>
-          <ul class="lines">
-            <li>7:40. Двери ещё закрыты.</li>
-            <li>Ценник на своём месте.</li>
-            <li>Проход свободный.</li>
-            <li>Теперь можно открывать.</li>
-          </ul>
-        </article>
-
-        <article class="idea" id="razgovor">
-          <div class="idea-head">
-            <div class="num">05</div>
-            <div>
-              <p class="kicker">Люди говорят. Дорожку с речью выключаете.</p>
-              <h2>Разговор без звука</h2>
+            <p class="line">Имя. Ставит в зал.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">05</span>
+              <span class="place">Зал</span>
+              <p>Продавец объясняет. Лицо рядом с товаром, покупатель сбоку, если согласен.</p>
             </div>
-          </div>
-          <p class="meta"><span class="chip">зал</span><span class="chip">руки покупателя</span></p>
-          <p class="body">Остаётся писк сканера, колёса тележки, бумага и дверь. В кадре сотрудник слушает, идёт вдоль стеллажа, останавливается, достаёт и отдаёт в руки. Лица покупателей лучше оставить сбоку: руки, спина, край плеча. Сотрудник остаётся героем.</p>
-          <p class="block-title">Текст на экране</p>
-          <ul class="lines">
-            <li>Спросили, где это лежит.</li>
-            <li>Дошли вместе.</li>
-            <li>Положили в руки.</li>
-            <li>Посчитали, сколько нужно на эту стену.</li>
-          </ul>
-        </article>
-
-        <article class="idea" id="ofis">
-          <div class="idea-head">
-            <div class="num">06</div>
-            <div>
-              <p class="kicker">Офис понятен, когда следующий кадр уже стоит в магазине.</p>
-              <h2>Офис виден в зале</h2>
+            <p class="line">Имя. Показывает, что взять.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">06</span>
+              <span class="place">Касса</span>
+              <p>Кассир над чеком. Лицо выше сканера, руки внизу кадра.</p>
             </div>
-          </div>
-          <p class="meta"><span class="chip">склейка двух мест</span></p>
-          <p class="body">Офис и магазин здесь одна работа, просто в разных комнатах. Снимайте пары кадров, где второй кадр подтверждает первый.</p>
-          <p class="block-title">Текст на экране</p>
-          <ul class="lines">
-            <li>В офисе поправили карточку.</li>
-            <li>В зале цена уже новая.</li>
-            <li>Позвонили в магазин.</li>
-            <li>Пошли проверить наличие.</li>
-            <li>Номер в заявке.</li>
-            <li>Номер на коробке.</li>
-          </ul>
-        </article>
-
-        <article class="idea" id="smeny">
-          <div class="idea-head">
-            <div class="num">07</div>
-            <div>
-              <p class="kicker">Короткий кусок для конца ролика или для внутреннего чата.</p>
-              <h2>Смена передаёт смену</h2>
+            <p class="line">Имя. Проводит оплату.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">07</span>
+              <span class="place">Финал</span>
+              <p>Те же шесть лиц подряд, в порядке шагов. Отдельная постановка не нужна.</p>
             </div>
-          </div>
-          <p class="meta"><span class="chip">20 секунд</span></p>
-          <p class="body">Два человека, одна открытая коробка, одна накладная или одна запись в тетради. Речей нет. Видно, что день не обрывается, а переходит дальше.</p>
-          <p class="block-title">Текст на экране</p>
-          <ul class="lines">
-            <li>Что не доделали, написали.</li>
-            <li>Следующая смена начинает с этого места.</li>
-          </ul>
-        </article>
-
+            <p class="line">Эту заявку провели они.</p>
+          </li>
+        </ol>
       </div>
     </div>
   </section>
 
-  <section id="sborka">
+  <section id="zal">
     <div class="wrap">
-      <h2>Если снимать один раз</h2>
-      <p class="intro">Склейте утро, одну позицию и офис с залом. Минута двадцать. До финальной карточки звучит магазин.</p>
-      <ol class="steps">
-        <li class="step">
-          <div class="ord">1</div>
-          <div>
-            <h3>Закрытый зал</h3>
-            <p>Свет включается, ценник на месте. Текст: «7:40. Двери ещё закрыты.»</p>
-          </div>
-        </li>
-        <li class="step">
-          <div class="ord">2</div>
-          <div>
-            <h3>Заявка в офисе</h3>
-            <p>Та же позиция, которую дальше увидим на складе и в зале.</p>
-          </div>
-        </li>
-        <li class="step">
-          <div class="ord">3</div>
-          <div>
-            <h3>Та же коробка на складе</h3>
-            <p>Камера узнаёт её по цвету, артикулу и наклейке.</p>
-          </div>
-        </li>
-        <li class="step">
-          <div class="ord">4</div>
-          <div>
-            <h3>Разговор в зале без звука речи</h3>
-            <p>Слушает, идёт к полке, отдаёт в руки.</p>
-          </div>
-        </li>
-        <li class="step">
-          <div class="ord">5</div>
-          <div>
-            <h3>Руки</h3>
-            <p>Отмерили и отдали. Одно слово на жест.</p>
-          </div>
-        </li>
-        <li class="step">
-          <div class="ord">6</div>
-          <div>
-            <h3>Касса</h3>
-            <p>Сканер и звук писка. Лицо покупателя сбоку.</p>
-          </div>
-        </li>
-        <li class="step">
-          <div class="ord">7</div>
-          <div>
-            <h3>Вечер</h3>
-            <p>Полку снова заполнили. Смена оставила запись следующей.</p>
-          </div>
-        </li>
-        <li class="step">
-          <div class="ord">8</div>
-          <div>
-            <h3>Карточка</h3>
-            <p>Две секунды тишины. «Делаем мир крепче».</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="grayband" id="smotret">
-    <div class="wrap">
-      <h2>Что посмотреть перед сменой</h2>
-      <p class="intro">У этих роликов стоит забрать приём, а сюжет оставить им. Нам нужны живые офис и магазин, а не декорации.</p>
-      <div class="watch-grid">
-        <article class="watch-card">
-          <h3>Honda. Hands</h3>
-          <p>Две минуты одних рук. Речи нет. Компанию видно по тому, как руки работают.</p>
-          <a class="out" href="https://www.youtube.com/watch?v=5wEjV2ekSwE">Открыть на YouTube</a>
-        </article>
-        <article class="watch-card">
-          <h3>Honda. Cog</h3>
-          <p>Детали передают движение друг другу. Музыки почти нет, звучит то, что происходит в кадре.</p>
-          <a class="out" href="https://www.youtube.com/watch?v=_ve4M4UsJQo">Открыть на YouTube</a>
-        </article>
-        <article class="watch-card">
-          <h3>Hornbach. Каждый квадратный метр</h3>
-          <p>Гран-при Канн 2024 в ремесле фильма. Сеть DIY. Весь ролик про одну маленькую меру. Текст один, в самом конце.</p>
-          <a class="out" href="https://www.youtube.com/watch?v=o_8-EtnWIjg">Открыть на YouTube</a>
-        </article>
-        <article class="watch-card">
-          <h3>Brico Dépôt. Engagés</h3>
-          <p>Документальный фильм про сотрудников сети DIY. 25 съёмочных дней, шесть человек, обычные задачи. На YouTube открывается серия про зал: Вилли и Кевин за обычной работой магазина.</p>
-          <a class="out" href="https://www.youtube.com/watch?v=i8loDRSRR-s">Открыть на YouTube</a>
-        </article>
+      <h2>Покупатель в зале</h2>
+      <p class="intro">Второй лист, если процесс идёт от входа до машины. Герой кадра продавец: лицо видно на каждом шаге. Покупатель остаётся в кадре, когда согласен.</p>
+      <div class="strip-wrap">
+        <ol class="strip">
+          <li class="panel">
+            <div class="shot">
+              <span class="n">01</span>
+              <span class="place">Вход</span>
+              <p>Продавец встречает. Лицо повёрнуто в проход.</p>
+            </div>
+            <p class="line">Имя. Встречает.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">02</span>
+              <span class="place">Проход</span>
+              <p>Идут вместе. В кадре лицо продавца и спина или плечо покупателя.</p>
+            </div>
+            <p class="line">Имя. Ведёт к полке.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">03</span>
+              <span class="place">Полка</span>
+              <p>Достаёт товар и смотрит на человека, которому отдаёт.</p>
+            </div>
+            <p class="line">Имя. Отдаёт в руки.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">04</span>
+              <span class="place">Замер</span>
+              <p>Рулетка или счёт. Лицо над меркой, чтобы было видно, кто считает.</p>
+            </div>
+            <p class="line">Имя. Считает, сколько нужно.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">05</span>
+              <span class="place">Касса</span>
+              <p>Кассир смотрит на чек и на покупателя. Оба лица, если покупатель согласен.</p>
+            </div>
+            <p class="line">Имя. Проводит оплату.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">06</span>
+              <span class="place">Машина</span>
+              <p>На улице у багажника. Лицо продавца, товар уже в руках.</p>
+            </div>
+            <p class="line">Имя. Помогает донести.</p>
+          </li>
+        </ol>
       </div>
     </div>
   </section>
 
-  <section id="smena">
+  <section class="soft" id="utro">
     <div class="wrap">
-      <h2>Как снимать смену</h2>
+      <h2>Утро смены</h2>
+      <p class="intro">Короткий лист на четыре лица. Подходит, если нужно показать, кто открывает зал и кто выходит к людям. Каждый кадр держится около четырёх секунд.</p>
+      <div class="strip-wrap">
+        <ol class="strip">
+          <li class="panel">
+            <div class="shot">
+              <span class="n">01</span>
+              <span class="place">Дверь</span>
+              <p>Человек открывает зал. Лицо в первом свете прохода.</p>
+            </div>
+            <p class="line">Имя. Открывает зал.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">02</span>
+              <span class="place">Ценник</span>
+              <p>Идёт вдоль полки и сверяет цену. На секунду поднимает лицо.</p>
+            </div>
+            <p class="line">Имя. Проверяет цену.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">03</span>
+              <span class="place">Полка</span>
+              <p>Пополняет место и смотрит, ровно ли стоит.</p>
+            </div>
+            <p class="line">Имя. Пополняет полку.</p>
+          </li>
+          <li class="panel">
+            <div class="shot">
+              <span class="n">04</span>
+              <span class="place">Зал</span>
+              <p>Стоит в проходе и ждёт первого покупателя. Лицо спокойное, к входу.</p>
+            </div>
+            <p class="line">Имя. Зал открыт.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="formaty">
+    <div class="wrap">
+      <h2>Как ещё собрать лист</h2>
+      <p class="intro">Три процесса выше уже можно снимать. Ниже четыре способа уложить те же лица, если лист нужно показать на согласовании или собрать ролик короче.</p>
       <div class="notes">
         <article class="note">
-          <h3>Договориться заранее</h3>
-          <p>На смене люди знают, что их снимают. В кадр берём тех, кто согласен. Если подписываете имена, подпись короткая и только с согласия.</p>
+          <h3>Сначала лицо, потом шаг</h3>
+          <p>На каждого человека два соседних кадра. Первый: лицо крупно, человек узнал себя. Второй: тот же человек делает шаг, лицо остаётся в кадре. Строка одна на оба кадра: «Имя. Находит позицию.»</p>
         </article>
         <article class="note">
-          <h3>Снимать то, что и так происходит</h3>
-          <p>Просить улыбнуться в камеру не нужно. От этого пропадает работа. Пустой зал после закрытия выглядит как декорация, поэтому магазин лучше снимать открытым.</p>
+          <h3>Передача, оба лица</h3>
+          <p>Смена, накладная, коробка. В одном кадре два человека: кто отдаёт и кто принимает. Оба лица читаются. Строка: «Имя передал. Имя принял.»</p>
         </article>
         <article class="note">
-          <h3>Покупатель в кадре сбоку</h3>
-          <p>Руки, спина, край плеча. Так видно помощь, и человек у полки остаётся со своим делом.</p>
+          <h3>Офис и зал рядом</h3>
+          <p>Экран делится пополам. Слева лицо в офисе, справа лицо в зале, один и тот же номер заявки. Строка посередине: «Одна заявка. Два человека.»</p>
         </article>
         <article class="note">
-          <h3>Один предмет на весь ролик</h3>
-          <p>Одна коробка, один артикул, один метр прохода. Зрителю легче узнать работу, когда вещь повторяется в офисе, на складе и в зале.</p>
+          <h3>Лист до съёмки</h3>
+          <p>Сначала пустые панели: номер, место, имя того, кто будет в кадре, строка шага. После смены в панели встают фото. Утверждать удобно процесс и людей, а ролик потом идёт в том же порядке.</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="grayband" id="smena">
+    <div class="wrap">
+      <h2>Как снимать лица</h2>
+      <div class="notes">
+        <article class="note">
+          <h3>Одинаковая дистанция</h3>
+          <p>К каждому лицу подходим с одного расстояния. Тогда офис, склад и зал на листе выглядят одной серией, а люди узнаются.</p>
+        </article>
+        <article class="note">
+          <h3>Лицо к делу</h3>
+          <p>Человек продолжает работу. Кадр берём, когда лицо поворачивается к коллеге, к полке, к экрану или к покупателю.</p>
+        </article>
+        <article class="note">
+          <h3>Имя по согласию</h3>
+          <p>В кадр берём тех, кто согласен. Имя на чёрной строке ставим только им. Покупателя снимаем, если он тоже согласен.</p>
+        </article>
+        <article class="note">
+          <h3>Один процесс на весь лист</h3>
+          <p>Одна заявка, один покупатель или одно утро. Лица тогда складываются в ход работы, а не в набор портретов.</p>
+        </article>
+      </div>
+      <p class="intro follow">Рядом по приёму серия Brico Dépôt «Engagés»: лица сотрудников остаются внутри рабочей сцены. <a href="https://www.youtube.com/watch?v=i8loDRSRR-s">Открыть на YouTube</a></p>
     </div>
   </section>
 
   <footer>
     <div class="wrap">
       <p class="motto">Делаем мир крепче</p>
-      <p>У Михалыча. Ролик про сотрудников в офисе и в магазине DIY.</p>
+      <p>У Михалыча. Покадровка работы в офисе и в магазине DIY.</p>
     </div>
   </footer>
 </body>
